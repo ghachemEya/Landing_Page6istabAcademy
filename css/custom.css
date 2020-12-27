@@ -2364,7 +2364,7 @@ textarea.form-control {
   text-align: center;
   vertical-align: middle;
   user-select: none;
-  background-color: transparent;
+  background-color: #00ffad;
   border: 1px solid transparent;
   padding: 0.625rem 1.25rem;
   font-size: 0.875rem;
@@ -2380,7 +2380,7 @@ textarea.form-control {
 }
 
 .btn:hover {
-  color: #369946;
+  color: #465d99;
   text-decoration: none;
 }
 
