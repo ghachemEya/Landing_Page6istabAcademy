@@ -16,8 +16,9 @@
 
     <!-- AOS -->
     <link rel="stylesheet" href="css/aos.css">
-  
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
 
@@ -79,6 +80,25 @@
             </div>
         </div>
     </div>
+
+     <!--Video player -->
+     <h2 class="text-center font-weight-bold my-5">Détails sur la formation</h2>
+     <p data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true"
+         class="lead text-center my-4">
+         Testez vos connaissances en matière de test de logiciels et préparez-vous à passer
+         <br>l'examen de niveau de base de l'ISTQB.
+     </p>
+     <div class="plyr__video-embed" id="player">
+        <iframe
+            src="https://www.youtube.com/watch?v=ZH7-WtJuyQc?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+            allowfullscreen allowtransparency allow="autoplay"></iframe>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.2/plyr.min.js"></script>
+    <script>
+        const player = new Plyr("#player");
+    </script>
+
     <!-- feature (skew background) -->
     <div class="jumbotron jumbotron-fluid feature" id="feature-first">
         <div class="container my-5">
@@ -105,11 +125,11 @@
                 <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" class="col-md-6 flex-md-last">
                     <h2 class="font-weight-bold">Accès sur mobile</h2>
                     <p class="my-4">
-                        Nos cours sont disponibles sur tous les appareils,
-                        <br> y compris les iPhones, les iPads et les appareils Android.
+                        Nos cours sont disponibles sur tous les appareils, y compris
+                        <br> les iPhones, les iPads et les appareils Android.
                     </p>
                     <a href="https://www.udemy.com/course/examens-istqb-fondation-pour-le-niveau-2018/?referralCode=14087D61D0F67DD26AB9&fbclid=IwAR0yiqqD-EXeb31bdWyRfS_SeA6ZG1CGjM4sVm8422pAPFoOxPeNXU7VvYo"
-                        onclick="window.open(this.href); return false;"
+                        onclick="window.open(this.href); return false;" id="sectionBtnGreen"
                         class="btn my-4 font-weight-bold atlas-cta cta-blue">Acheter Maintenant</a>
                 </div>
                 <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
@@ -118,6 +138,10 @@
             </div>
         </div>
     </div>
+
+   
+
+
 
 
     <!--Témoignages -->
@@ -130,9 +154,9 @@
                             <img src="img/face1.jpg">
                         </div>
                         <p class="description">
-                            
-                            Le formateur a été très encourageant et, aussi simple que cela puisse paraître, 
-                            cela fait toute la différence. 
+
+                            Le formateur a été très encourageant et, aussi simple que cela puisse paraître,
+                            cela fait toute la différence.
 
                         </p>
                         <h3 class="title">François</h3>
@@ -141,13 +165,13 @@
 
                     <div class="testimonial">
                         <div class="pic">
-                            <img src="img/face15.jpg">
+                            <img src="img/eya.jpg">
                         </div>
                         <p class="description">
-                            Par rapport à d'autres cours similaires, celui-ci est présenté de manière intéressante avec 
+                            Par rapport à d'autres cours similaires, celui-ci est présenté de manière intéressante avec
                             <br>des informations à valeur ajoutée.
                         </p>
-                        <h3 class="title">Noe</h3>
+                        <h3 class="title">Eya Ghachem</h3>
                         <small class="post">- Ingénieur informatique </small>
                     </div>
 
@@ -156,7 +180,8 @@
                             <img src="img/face16.jpg">
                         </div>
                         <p class="description">
-                            Un cours très intéressant. Très bon professeur. Cours plein de pièces jointes et de diapositives très claires.
+                            Un cours très intéressant. Très bon professeur. Cours plein de pièces jointes et de
+                            diapositives très claires.
                         </p>
                         <h3 class="title">Paul</h3>
                         <small class="post">- Consultant QA</small>
@@ -166,7 +191,8 @@
                             <img src="img/face20.jpg">
                         </div>
                         <p class="description">
-                            Oui, c'est certainement un bon parti pour moi. J'aime la positivité du formateur, il explique très clairement et donne de bons exemples.
+                            Oui, c'est certainement un bon parti pour moi. J'aime la positivité du formateur, il
+                            explique très clairement et donne de bons exemples.
                         </p>
                         <h3 class="title">Kellie</h3>
                         <small class="post">- Ingénieur QA</small>
@@ -177,24 +203,24 @@
     </div>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
             $("#testimonial-slider").owlCarousel({
-                items:2,
-                itemsDesktop:[1000,2],
-                itemsDesktopSmall:[990,2],
-                itemsTablet:[768,1],
-                pagination:true,
-                navigation:false,
-                navigationText:["",""],
-                slideSpeed:1000,
-                autoPlay:true
+                items: 2,
+                itemsDesktop: [1000, 2],
+                itemsDesktopSmall: [990, 2],
+                itemsTablet: [768, 1],
+                pagination: true,
+                navigation: false,
+                navigationText: ["", ""],
+                slideSpeed: 1000,
+                autoPlay: true
             });
         });
     </script>
-
 
 
 
