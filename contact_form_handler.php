@@ -1,26 +1,27 @@
+
+
 <?php
+if(!empty($_POST["submit"])) {
+	$name = $_POST["userName"];
+	$email = $_POST["userEmail"];
+	$subject = "New contact submission";
+	$content = "hello world !!! ";
 
-$name = $_POST['name'];
-$visitor_mail = $_POST['Email'];
-$message = $_POST['message'];
+	$toEmail = "academyistqb@gmail.com";
+	$mailHeaders = "From: " . $name . "<". $email .">\r\n";
+	if(mail($toEmail, $subject, $content, $mailHeaders)) {
+	    // Message if mail has been sent
+    echo "<script>
+    alert('Mail has been sent Successfully.');
+    </script>";
+    }
 
-$email_from = "ghachemeya12@gmail.com";
-
-$email_subject = "New form Submission";
-
-$email_body = "User Name: $name.\n". 
-"User Email : $visitor_mail.\n". 
-"User Message : $message.\n";
-
-$to ="ghachem.eya@ieee.org";
-
-$headers = "Form : $email_from \r\n";
-
-$headers .="Reply-To: $visitor_mail \r\n";
-
-mail($to,$email_subject,$email_body,$headers);
-
-header("Location : index.html");
-
+    else{
+    // Message if mail has been not sent
+    echo "<script>
+        alert('EMAIL FAILED');
+    </script>";
+    }
+        }
 
 ?>
