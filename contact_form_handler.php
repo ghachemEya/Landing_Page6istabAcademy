@@ -5,7 +5,7 @@ $name = $_POST['name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 
-$emailTo = "dechly98@gmail.com";
+$emailTo = "academyistqb@gmail.com";
 $subject = "[Formulaire de contact - Nouveau message]";
 $mailHeaders = "From: " . $name . "<". $email .">\r\n";
 
