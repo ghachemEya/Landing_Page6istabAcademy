@@ -1,27 +1,27 @@
-
-
 <?php
 if(!empty($_POST["submit"])) {
-	$name = $_POST["userName"];
-	$email = $_POST["userEmail"];
-	$subject = "New contact submission";
-	$content = "hello world !!! ";
+	$name = $_POST["name"];
+	$email = $_POST["Email"];
+    $subject = "New contact submission";
+    $message = $_POST["message"];
 
 	$toEmail = "academyistqb@gmail.com";
-	$mailHeaders = "From: " . $name . "<". $email .">\r\n";
-	if(mail($toEmail, $subject, $content, $mailHeaders)) {
-	    // Message if mail has been sent
-    echo "<script>
-    alert('Mail has been sent Successfully.');
-    </script>";
+    $mailHeaders = "From: " . $name . "<". $email .">\r\n";
+    $email_message = "Form details below.\n\n";
+
+    $email_message .= "Name: " . $name . "\n";
+    $email_message .= "Email: " . $email . "\n";
+    $email_message .= "Message: " . $message . "\n";
+
+	if(mail($toEmail, $subject, $email_message, $mailHeaders)) {
+        // Message if mail has been sent
+        header("Location: ./index.html");
     }
 
     else{
     // Message if mail has been not sent
-    echo "<script>
-        alert('EMAIL FAILED');
-    </script>";
+        header("Location: ./index.html");
     }
-        }
-
+}
 ?>
+
