@@ -26,6 +26,7 @@ $mail->setFrom('academyistqb@gmail.com', 'ISTQB Academy');
 $mail->addAddress('academyistqb@gmail.com', 'ISTQB Academy');
 
 
+
 $mail->Subject = '[Formulaire de contact - Landing Page]';
 $mail->isHTML(true);
 
