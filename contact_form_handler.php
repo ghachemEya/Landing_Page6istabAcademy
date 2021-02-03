@@ -8,13 +8,13 @@ use PHPMailer\PHPMailer\PHPMailer;
 $mail = new PHPMailer();
 
 //remove this line before pushing to prod
-$mail->SMTPDebug = SMTP::DEBUG_SERVER;
+//$mail->SMTPDebug = SMTP::DEBUG_SERVER;
 
 $mail->isSMTP();
-$mail->Host = 'smtp.gmail.com';
+$mail->Host = 'mail.istqbacademy.net';
 $mail->SMTPAuth = true;
-$mail->Username = 'academyistqb@gmail.com'; 
-$mail->Password = 'cabinet123456789@';
+$mail->Username = 'istqbaca'; 
+$mail->Password = 'W;R6653sBdTmk)';
 $mail->SMTPSecure = 'tls';
 $mail->Port = 587;
 $name = $_POST['name'];
@@ -39,9 +39,8 @@ $mailContent .= "<p>" . $message . "</p>";
 $mail->Body = $mailContent;
 
 if($mail->send()){
-    echo "Message sent";
-    /*header("Location: /");
-    exit;*/
+    header("Location: /");
+    exit;
 }else{
     echo 'Message could not be sent.';
     echo 'Mailer Error: ' . $mail->ErrorInfo;
